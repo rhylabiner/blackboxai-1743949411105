@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" spacing="10" alignment="CENTER" stylesheets="@styles.css">
+    <Label text="Book Management" styleClass="header"/>
+    <HBox spacing="10">
+        <Label text="ISBN:"/>
+        <TextField fx:id="isbnField" promptText="Enter ISBN"/>
+    </HBox>
+    <HBox spacing="10">
+        <Label text="Title:"/>
+        <TextField fx:id="titleField" promptText="Enter Book Title"/>
+    </HBox>
+    <HBox spacing="10">
+        <Label text="Author:"/>
+        <TextField fx:id="authorField" promptText="Enter Author Name"/>
+    </HBox>
+    <Button text="Add Book" onAction="#addBook" styleClass="action-button"/>
+    <ImageView fx:id="barcodeImageView" fitWidth="200" fitHeight="100"/>
+    <TableView fx:id="bookTable" style="-fx-padding: 10;">
+        <columns>
+            <TableColumn text="ISBN" prefWidth="150"/>
+            <TableColumn text="Title" prefWidth="200"/>
+            <TableColumn text="Author" prefWidth="150"/>
+            <TableColumn text="Status" prefWidth="100"/>
+        </columns>
+    </TableView>
+</VBox>
