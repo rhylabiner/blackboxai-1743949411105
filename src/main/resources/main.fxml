@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@styles.css">
+    <tabs>
+        <Tab text="Students">
+            <fx:include source="students.fxml"/>
+        </Tab>
+        <Tab text="Books">
+            <fx:include source="books.fxml"/>
+        </Tab>
+        <Tab text="Attendance">
+            <fx:include source="attendance.fxml"/>
+        </Tab>
+        <Tab text="Borrowing">
+            <fx:include source="borrowing.fxml"/>
+        </Tab>
+        <Tab text="Reports">
+            <fx:include source="reports.fxml"/>
+        </Tab>
+    </tabs>
+</TabPane>
