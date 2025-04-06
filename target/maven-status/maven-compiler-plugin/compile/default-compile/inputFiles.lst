@@ -1,0 +1,17 @@
+/project/sandbox/user-workspace/src/main/java/com/library/Model/Book.java
+/project/sandbox/user-workspace/src/main/java/com/library/Controller/StudentController.java
+/project/sandbox/user-workspace/src/main/java/com/library/Util/DatabaseUtil.java
+/project/sandbox/user-workspace/src/main/java/com/library/Model/Attendance.java
+/project/sandbox/user-workspace/src/main/java/com/library/Controller/ReportsController.java
+/project/sandbox/user-workspace/src/main/java/com/library/MainApp.java
+/project/sandbox/user-workspace/src/main/java/com/library/Model/Borrowing.java
+/project/sandbox/user-workspace/src/main/java/com/library/Controller/BookController.java
+/project/sandbox/user-workspace/src/main/java/com/library/Util/QRCodeUtil.java
+/project/sandbox/user-workspace/src/main/java/com/library/DAO/AttendanceDAO.java
+/project/sandbox/user-workspace/src/main/java/com/library/DAO/StudentDAO.java
+/project/sandbox/user-workspace/src/main/java/com/library/Controller/BorrowingController.java
+/project/sandbox/user-workspace/src/main/java/com/library/Util/ExportUtil.java
+/project/sandbox/user-workspace/src/main/java/com/library/DAO/BorrowingDAO.java
+/project/sandbox/user-workspace/src/main/java/com/library/DAO/BookDAO.java
+/project/sandbox/user-workspace/src/main/java/com/library/Controller/AttendanceController.java
+/project/sandbox/user-workspace/src/main/java/com/library/Model/Student.java
