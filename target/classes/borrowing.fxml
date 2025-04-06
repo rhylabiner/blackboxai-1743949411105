@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" spacing="10" stylesheets="@styles.css">
+    <Label text="Book Borrowing System" styleClass="header"/>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Student ID:"/>
+        <TextField fx:id="studentIdField" promptText="Enter Student ID" style="-fx-pref-width: 200;"/>
+        <Button text="Load Borrowings" onAction="#loadBorrowings" styleClass="action-button"/>
+    </HBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Book ISBN:"/>
+        <TextField fx:id="isbnField" promptText="Enter Book ISBN" style="-fx-pref-width: 200;"/>
+        <Button text="Borrow Book" onAction="#borrowBook" styleClass="confirm-button"/>
+    </HBox>
+    
+    <TableView fx:id="borrowingTable" style="-fx-padding: 10;">
+        <columns>
+            <TableColumn text="Book ISBN" prefWidth="150"/>
+            <TableColumn text="Borrow Date" prefWidth="200"/>
+            <TableColumn text="Due Date" prefWidth="200"/>
+            <TableColumn text="Status" prefWidth="100"/>
+        </columns>
+    </TableView>
+</VBox>
