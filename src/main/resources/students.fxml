@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" spacing="10" alignment="CENTER" stylesheets="@styles.css">
+    <Label text="Student Management" styleClass="header"/>
+    <HBox spacing="10">
+        <Label text="Student ID:"/>
+        <TextField fx:id="studentIdField" promptText="Enter Student ID"/>
+    </HBox>
+    <HBox spacing="10">
+        <Label text="Name:"/>
+        <TextField fx:id="nameField" promptText="Enter Student Name"/>
+    </HBox>
+    <Button text="Add Student" onAction="#addStudent" styleClass="action-button"/>
+    <ImageView fx:id="qrCodeImageView" fitWidth="200" fitHeight="200"/>
+    <TableView fx:id="studentTable" style="-fx-padding: 10;">
+        <columns>
+            <TableColumn text="Student ID" prefWidth="150"/>
+            <TableColumn text="Name" prefWidth="200"/>
+            <TableColumn text="QR Code" prefWidth="150"/>
+        </columns>
+    </TableView>
+</VBox>
