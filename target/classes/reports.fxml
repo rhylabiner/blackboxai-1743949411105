@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" spacing="10" stylesheets="@styles.css">
+    <Label text="Library Reports" styleClass="header"/>
+    
+    <TabPane>
+        <tabs>
+            <Tab text="Attendance Records">
+                <VBox spacing="10">
+                    <HBox spacing="10" alignment="CENTER">
+                        <Button text="Export to CSV" onAction="#exportAttendance" styleClass="action-button"/>
+                    </HBox>
+                    <TableView fx:id="attendanceTable" style="-fx-padding: 10;"/>
+                </VBox>
+            </Tab>
+            <Tab text="Overdue Books">
+                <VBox spacing="10">
+                    <HBox spacing="10" alignment="CENTER">
+                        <Button text="Export to CSV" onAction="#exportOverdue" styleClass="action-button"/>
+                    </HBox>
+                    <TableView fx:id="overdueTable" style="-fx-padding: 10;"/>
+                </VBox>
+            </Tab>
+        </tabs>
+    </TabPane>
+</VBox>
